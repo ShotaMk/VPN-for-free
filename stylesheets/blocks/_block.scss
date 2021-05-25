@@ -1,0 +1,16 @@
+//blocks...
+ .container{
+	max-width: 1180px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+@import "about/about";
+@import "header/header";
+@import "info/info";
+@import "services/service";
+@import "price-plan/priceplan";
+@import "location/location";
+@import "reviews/reviews";
+@import "subscribe/subscribe";
+@import "footer/footer";

@@ -1,0 +1,153 @@
+.info {
+	padding-top: 50px;
+	padding-bottom: 63px;
+
+	.info__wrapper {
+		display: flex;
+		justify-content: center;
+		padding: 36px 90px;
+		margin: 0 auto;
+		border-radius: 10px;
+		box-shadow: 0 14px 61px 0 rgba(13, 16, 37, 0.06);
+		flex-wrap: wrap;
+	}
+
+	.info__users {
+		display: flex;
+		align-items: center;
+		min-height: 128px;
+
+		& img {
+			margin-right: 34%;
+		}
+
+		margin-right: auto;
+		padding-right: 20px;
+	}
+
+	.info__location, .info__server {
+		display: flex;
+		align-items: center;
+		min-height: 128px;
+
+		& img {
+			margin-right: 25%;
+		}
+	}
+
+	.info__location {
+		border-right: 2px solid #EEEFF2;
+		border-left: 2px solid #EEEFF2;
+		padding-right: 17%;
+		padding-left: 13%;
+	}
+
+	.info__server {
+		margin-left: auto;
+		margin-right: 30px;
+	}
+
+	.info__number {
+		margin-bottom: 5px;
+		font-weight: bold;
+		font-size: 25px;
+		line-height: 30px;
+		color: #0B132A;
+	}
+
+	.info__title {
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 30px;
+		color: #0B132A;
+	}
+}
+
+
+/*Resize*/
+
+@media (max-width: 1024px) {
+	.info {
+		.info__wrapper {
+			padding: 24px 50px;
+		}
+
+		.info__location {
+			padding-right: 15%;
+			padding-left: 7%;
+		}
+
+		.info__users {
+			margin-right: auto;
+			padding-right: 10px;
+		}
+
+		.info__server {
+			margin-left: auto;
+			margin-right: 30px;
+		}
+
+		.info__location, .info__server {
+			& img {
+				margin-right: 18%;
+			}
+		}
+
+		.info__users {
+			& img {
+				margin-right: 24%;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.info {
+		.info__wrapper {
+			padding: 18px 30px;
+		}
+
+		.info__location {
+			padding-right: 12%;
+			padding-left: 5%;
+		}
+
+		.info__users {
+			margin-right: auto;
+			padding-right: 7px;
+		}
+
+		.info__server {
+			margin-left: auto;
+			margin-right: 15px;
+		}
+
+		.info__location, .info__server {
+			& img {
+				margin-right: 18%;
+			}
+		}
+
+		.info__users {
+			& img {
+				margin-right: 18%;
+			}
+		}
+	}
+}
+
+@media (max-width: 670px) {
+	.info {
+		.info__wrapper {
+			display: block;
+		}
+
+		.info__location, .info__server, .info__users {
+			border: none;
+			max-width: 37%;
+			min-width: 25%;
+			margin: 0 auto;
+			padding: 0;
+		}
+	}
+}

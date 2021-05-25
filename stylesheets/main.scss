@@ -1,0 +1,10 @@
+@import "mixins/mixins";
+@import "base/base";
+@import "ui/ui";
+
+
+//Import your blocks
+
+@import "blocks/block";
+/*$body-color: #4F5665 !global;*/
+$main-color: #0B132A;

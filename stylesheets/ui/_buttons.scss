@@ -1,0 +1,112 @@
+.button {
+	padding: 11px 61px;
+	border: 2px solid #F53838;
+	color: #F53838;
+	background-color: #fff;
+	border-radius: 50px;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+
+	&:hover {
+		background-color: #f53838;
+		color: white;
+		cursor: pointer;
+	}
+
+	&.secondary-button {
+		position: relative;
+		width: 250px;
+		height: 60px;
+		color: #ffffff;
+		background-color: #F53838;
+		border-radius: 10px;
+		z-index: 2;
+	}
+
+	&.secondary-button::after {
+		content: '';
+		position: absolute;
+		width: 212px;
+		height: 40px;
+		border-radius: 10px;
+		top: 50px;
+		left: 50%;
+		vertical-align: center;
+		transform: translateX(-50%);
+		background-color: rgba(245, 56, 56, 0.35);
+		filter: blur(20px);
+		z-index: 1;
+	}
+
+	&.secondary-button:hover {
+		cursor: pointer;
+	}
+
+	&.secondary-button:hover::after {
+		content: '';
+		position: absolute;
+		width: 212px;
+		height: 40px;
+		border-radius: 10px;
+		top: 40px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: rgba(245, 56, 56, 0);
+		transition-duration: 1s;
+		transition-property: background-color;
+		filter: blur(12px);
+		z-index: 1;
+
+	}
+}
+
+.button-rounded{
+	padding: 19px 18px 15px;
+	border: 2px solid #f53838;
+	border-radius: 50%;
+	background-color: transparent;
+	fill: #F53838;
+}
+
+.button-rounded--active{
+	box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25), 2px 4px 4px rgba(0, 0, 0, 0.25);
+	margin-right: 15px;
+	fill: #F53838;
+}
+
+.button-rounded:hover{
+	background-color: #f53838;
+	fill: white;
+}
+/*Resize**/
+
+@media (max-width: 1024px){
+	.user-nav__link, .user-nav__link_red {
+		font-family: 'Rubik', sans-serif;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 18px;
+		text-decoration: none;
+	}
+	.user-nav__link_red{
+		border: 1px solid #F53855;
+		color: #F53855;
+		padding: 16px 50px 16px;
+		border-radius: 50px;
+	}
+}
+
+
+@media (max-width: 425px) {
+	.button {
+		.user-nav {
+			justify-content: space-around;
+		}
+		.secondary-button{
+			width: 150px;
+			height: 50px;
+		}
+	}
+}
