@@ -9,6 +9,8 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet" href="./assets/libs/slick-1.8.1/slick/slick.css">
+	<link rel="stylesheet" href="./assets/libs/slick-1.8.1/slick/slick-theme.css">
 	<link rel="stylesheet" href="./assets/css/main.css">
 	<title>LoremVPN</title>
 </head>
@@ -60,22 +62,22 @@
 
 <section class="info">
 	<div class="container info__wrapper">
-		<div class="info__users">
-			<img class="info__users-icon" src="./assets/image/user.svg" width="55" height="55" alt="user">
+		<div class="info__users info__content">
+			<img class="info__users-icon" src="./assets/image/user.svg" alt="user">
 			<div class="info__users-content">
 				<p class="info__number">90+</p>
 				<p class="info__title">Users</p>
 			</div>
 		</div>
-		<div class="info__location">
-			<img class="info__location-icon" src="./assets/image/location.svg" width="55" height="55" alt="location">
+		<div class="info__location info__content">
+			<img class="info__location-icon" src="./assets/image/location.svg" alt="location">
 			<div class="info__location-content">
 				<p class="info__number">30+</p>
 				<p class="info__title">Locations</p>
 			</div>
 		</div>
-		<div class="info__server">
-			<img class="info__server-icon" src="./assets/image/Server.svg" width="55" height="55" alt="server">
+		<div class="info__server info__content">
+			<img class="info__server-icon" src="./assets/image/Server.svg" alt="server">
 			<div class="info__server-content">
 				<p class="info__number">50+</p>
 				<p class="info__title">Servers</p>
@@ -190,7 +192,7 @@
 		<p class="reviews__text secondary-text">These are the stories of our customers who have joined us with great
 			<br>pleasure
 			when using this crazy feature.</p>
-		<div class="reviews__testimonials">
+		<div class="reviews__testimonials responsive">
 			<div class="reviews__testimonial">
 				<div class="reviews__user-info">
 					<img src="./assets/image/user-icon1.png" alt="user-icon" class="reviews__user-icon">
@@ -218,7 +220,7 @@
 					</p>
 				</div>
 			</div>
-
+			
 			<div class="reviews__testimonial">
 				<div class="reviews__user-info">
 					<img src="./assets/image/user-icon2.png" alt="user-icon" class="reviews__user-icon">
@@ -231,7 +233,7 @@
 							 xmlns="http://www.w3.org/2000/svg">
 							<path
 								d="M13.189 4.61491L9.22178 4.02813L7.44834 0.369118C7.39991 0.268937 7.32022 0.187837 7.22178 0.138542C6.97491 0.0145072 6.67491 0.117869 6.55147 0.369118L4.77803 4.02813L0.810845 4.61491C0.70147 4.63081 0.60147 4.68329 0.524907 4.7628C0.432347 4.85962 0.381343 4.98987 0.383101 5.12495C0.384859 5.26002 0.439235 5.38886 0.534282 5.48315L3.40459 8.33117L2.72647 12.3527C2.71057 12.4463 2.72074 12.5425 2.75583 12.6305C2.79093 12.7184 2.84953 12.7946 2.92501 12.8504C3.00049 12.9062 3.08982 12.9394 3.18288 12.9461C3.27593 12.9529 3.36898 12.933 3.45147 12.8886L6.99991 10.99L10.5483 12.8886C10.6452 12.9411 10.7577 12.9586 10.8655 12.9395C11.1374 12.8918 11.3202 12.6294 11.2733 12.3527L10.5952 8.33117L13.4655 5.48315C13.5437 5.40523 13.5952 5.30346 13.6108 5.19215C13.653 4.91386 13.4624 4.65625 13.189 4.61491Z"
-								fill="#FEA250"/>
+								fill="#FEA250"/></svg>
 							<span class="reviews__rating-count">
 									4.5
 								</span>
@@ -243,6 +245,32 @@
 					</p>
 				</div>
 			</div>
+
+			<div class="reviews__testimonial reviews__testimonial--second">
+				<div class="reviews__user-info">
+					<img src="./assets/image/user-icon2.png" alt="user-icon" class="reviews__user-icon">
+					<div class="reviews__user-content">
+						<h3 class="reviews__user-name">Yessica Christy</h3>
+						<p class="reviews__user-location">Shanxi, China</p>
+					</div>
+					<div class="reviews__rating">
+						<svg width="14" height="13" viewBox="0 0 14 13" class="reviews__rating-icon" fill="none"
+							 xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.189 4.61491L9.22178 4.02813L7.44834 0.369118C7.39991 0.268937 7.32022 0.187837 7.22178 0.138542C6.97491 0.0145072 6.67491 0.117869 6.55147 0.369118L4.77803 4.02813L0.810845 4.61491C0.70147 4.63081 0.60147 4.68329 0.524907 4.7628C0.432347 4.85962 0.381343 4.98987 0.383101 5.12495C0.384859 5.26002 0.439235 5.38886 0.534282 5.48315L3.40459 8.33117L2.72647 12.3527C2.71057 12.4463 2.72074 12.5425 2.75583 12.6305C2.79093 12.7184 2.84953 12.7946 2.92501 12.8504C3.00049 12.9062 3.08982 12.9394 3.18288 12.9461C3.27593 12.9529 3.36898 12.933 3.45147 12.8886L6.99991 10.99L10.5483 12.8886C10.6452 12.9411 10.7577 12.9586 10.8655 12.9395C11.1374 12.8918 11.3202 12.6294 11.2733 12.3527L10.5952 8.33117L13.4655 5.48315C13.5437 5.40523 13.5952 5.30346 13.6108 5.19215C13.653 4.91386 13.4624 4.65625 13.189 4.61491Z"
+								fill="#FEA250"/></svg>
+							<span class="reviews__rating-count">
+									4.5
+								</span>
+					</div>
+				</div>
+				<div class="reviews__content">
+					<p class="reviews__comment secondary-text">
+						“I like it because I like to travel far and still can connect with high speed.”.
+					</p>
+				</div>
+			</div>
+			
 
 		</div>
 		<div class="reviews__navigation">
@@ -273,7 +301,7 @@
 	</div>
 </section>
 <section class="subscribe" id="help">
-	<div class="container subscribe__wrapper">
+	<div class="subscribe__wrapper">
 		<div class="subscribe__info">
 			<h2 class="subscribe__heading heading">Subscribe Now for Get Special Features!</h2>
 			<p class="subscribe__text secondary-text">Let's subscribe with us and find the fun.</p>
@@ -285,6 +313,7 @@
 	<div class="container">
 		<div class="footer__wrapper">
 			<div class="footer__content">
+				<div class="foote__content-info">
 				<svg width="148" height="34" class="footer__logo" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path
 						d="M47.04 24.74a.463.463 0 01-.34-.14.463.463 0 01-.14-.34V11.22c0-.147.047-.26.14-.34a.463.463 0 01.34-.14h1.86c.147 0 .26.046.34.14.093.08.14.193.14.34v11.14h6.34c.147 0 .267.046.36.14.093.093.14.213.14.36v1.4a.487.487 0 01-.14.36.534.534 0 01-.36.12h-8.68zm15.325.2c-1.56 0-2.766-.4-3.62-1.2-.853-.814-1.313-1.92-1.38-3.32l-.02-.88.02-.88c.067-1.387.534-2.487 1.4-3.3.867-.814 2.067-1.22 3.6-1.22 1.534 0 2.734.406 3.6 1.22.867.813 1.334 1.913 1.4 3.3.014.16.02.453.02.88 0 .426-.006.72-.02.88-.066 1.4-.526 2.506-1.38 3.32-.853.8-2.06 1.2-3.62 1.2zm0-1.98c.707 0 1.254-.22 1.64-.66.387-.454.6-1.114.64-1.98.014-.134.02-.394.02-.78 0-.387-.006-.647-.02-.78-.04-.867-.253-1.52-.64-1.96-.386-.454-.933-.68-1.64-.68-.706 0-1.253.226-1.64.68-.386.44-.6 1.093-.64 1.96l-.02.78.02.78c.04.866.254 1.526.64 1.98.387.44.934.66 1.64.66zm7.716 1.78a.463.463 0 01-.34-.14.463.463 0 01-.14-.34v-9.42c0-.134.047-.247.14-.34a.435.435 0 01.34-.16h1.62c.147 0 .267.046.36.14.094.093.14.213.14.36v.82c.32-.427.72-.754 1.2-.98.494-.227 1.054-.34 1.68-.34h.82c.147 0 .26.046.34.14.094.08.14.193.14.34v1.44a.463.463 0 01-.14.34.424.424 0 01-.34.14h-1.56c-.626 0-1.12.18-1.48.54-.36.36-.54.853-.54 1.48v5.5a.463.463 0 01-.14.34.488.488 0 01-.36.14h-1.74zm12.203.2c-1.48 0-2.66-.427-3.54-1.28-.866-.867-1.326-2.08-1.38-3.64l-.02-.5.02-.5c.067-1.52.534-2.714 1.4-3.58.88-.867 2.054-1.3 3.52-1.3 1.574 0 2.787.48 3.64 1.44.867.96 1.3 2.24 1.3 3.84v.42a.463.463 0 01-.14.34.488.488 0 01-.36.14h-6.64v.16c.027.733.227 1.353.6 1.86.387.493.914.74 1.58.74.787 0 1.42-.307 1.9-.92.12-.147.214-.24.28-.28.08-.04.194-.06.34-.06h1.72c.12 0 .22.04.3.12.094.066.14.153.14.26 0 .32-.193.7-.58 1.14-.373.426-.913.8-1.62 1.12-.706.32-1.526.48-2.46.48zm2.22-6.3v-.06c0-.787-.2-1.42-.6-1.9-.386-.48-.926-.72-1.62-.72-.693 0-1.233.24-1.62.72-.386.48-.58 1.113-.58 1.9v.06h4.42zm5.323 6.1a.463.463 0 01-.34-.14.463.463 0 01-.14-.34v-9.44c0-.134.047-.247.14-.34a.463.463 0 01.34-.14h1.56c.134 0 .247.046.34.14.094.093.14.206.14.34v.68c.694-.907 1.66-1.36 2.9-1.36 1.48 0 2.514.593 3.1 1.78.32-.534.774-.96 1.36-1.28.587-.334 1.22-.5 1.9-.5 1.094 0 1.987.373 2.68 1.12.694.746 1.04 1.833 1.04 3.26v5.74a.46.46 0 01-.14.34.423.423 0 01-.34.14h-1.64a.465.465 0 01-.34-.14.464.464 0 01-.14-.34v-5.58c0-.84-.18-1.447-.54-1.82-.346-.387-.813-.58-1.4-.58-.52 0-.966.193-1.34.58-.36.386-.54.993-.54 1.82v5.58a.463.463 0 01-.14.34.463.463 0 01-.34.14h-1.64a.463.463 0 01-.34-.14.463.463 0 01-.14-.34v-5.58c0-.84-.186-1.447-.56-1.82-.36-.387-.82-.58-1.38-.58a1.82 1.82 0 00-1.36.58c-.36.386-.54.993-.54 1.82v5.58a.463.463 0 01-.14.34.463.463 0 01-.34.14h-1.68zm21.647 0c-.426 0-.7-.2-.82-.6l-4.08-12.8-.04-.18c0-.107.04-.2.12-.28.094-.094.2-.14.32-.14h2.48c.187 0 .34.053.46.16.134.106.22.226.26.36l2.84 9.24 2.82-9.24a.781.781 0 01.24-.36.747.747 0 01.48-.16h2.5c.107 0 .2.046.28.14.094.08.14.173.14.28l-.04.18-4.08 12.8c-.12.4-.393.6-.82.6h-3.06zm10.367 0a.534.534 0 01-.36-.14.534.534 0 01-.14-.36v-13c0-.147.047-.267.14-.36a.534.534 0 01.36-.14h5.6c1.707 0 3.047.393 4.02 1.18.987.786 1.48 1.933 1.48 3.44 0 1.493-.486 2.62-1.46 3.38-.973.746-2.32 1.12-4.04 1.12h-2.38v4.38a.455.455 0 01-.16.36.486.486 0 01-.36.14h-2.7zm5.5-7.64c.587 0 1.047-.147 1.38-.44.334-.307.5-.754.5-1.34 0-.547-.16-.98-.48-1.3-.306-.334-.773-.5-1.4-.5h-2.34v3.58h2.34zm8.016 7.64a.534.534 0 01-.36-.14.534.534 0 01-.14-.36v-13c0-.147.047-.267.14-.36a.534.534 0 01.36-.14h2.12c.333 0 .56.126.68.38l4.88 7.68v-7.56c0-.147.047-.267.14-.36a.534.534 0 01.36-.14h2.4c.147 0 .267.046.36.14.093.093.14.213.14.36v12.98a.56.56 0 01-.14.38.486.486 0 01-.36.14h-2.14a.716.716 0 01-.66-.38l-4.88-7.4v7.28a.534.534 0 01-.14.36.486.486 0 01-.36.14h-2.4z"
@@ -296,9 +325,12 @@
 				<p class="footer__description secondary-text"><span>LoremVPN</span> is a private virtual network that
 					has unique
 					features and has high security.</p>
-				<p class="footer__site-info secondary-text">©2021 Lorem<span>VPN</span></p>
+				</div>
+				<div class="footer__content-copyright">
+				<p class="footer__site-info--desctop secondary-text">©2021 Lorem<span>VPN</span></p>
+				</div>
 			</div>
-			<div class="footer__menus">
+			<div class="footer__menus footer__menus-products">
 				<h3 class="footer__menu-title">Product</h3>
 				<ul class="footer__menu">
 					<li class="footer__menu-item"><a href="#" class="menu-item__link">Download </a></li>
@@ -320,16 +352,23 @@
 					<li class="footer__menu-item"><a href="#" class="menu-item__link">Terms of Service</a></li>
 				</ul>
 			</div>
-			<div class="footer__menus">
+			<div class="footer__menus footer__menus-earnmoney">
 				<h3 class="footer__menu-title">Earn Money</h3>
 				<ul class="footer__menu">
 					<li class="footer__menu-item"><a href="#" class="menu-item__link">Affiliate</a></li>
 					<li class="footer__menu-item"><a href="#" class="menu-item__link">Become Partner</a></li>
 				</ul>
+				<p class="footer__site-info--mobile secondary-text">©2021 Lorem<span>VPN</span></p>
 			</div>
 		</div>
 	</div>
 </footer>
 <script src="assets/js/app.js" defer="defer"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./assets/libs/slick-1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+
+
 </body>
 </html>
